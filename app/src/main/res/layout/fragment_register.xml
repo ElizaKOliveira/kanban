@@ -12,15 +12,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@id/LinearLayout1">
-    
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/nav"
+            android:paddingTop="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criar conta"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+
         <LinearLayout
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:orientation="vertical"
             android:layout_marginHorizontal="25dp">
 
@@ -74,8 +82,13 @@
             <ProgressBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
                 android:indeterminateTint="@color/white"
-                android:layout_gravity="center"/>
+                android:visibility="invisible"
+                tools:visibility="visible"
+                />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
