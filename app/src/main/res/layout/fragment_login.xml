@@ -49,11 +49,11 @@
             android:background="@drawable/bg_edit_text"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textColor="@color/color_default"
-
             app:backgroundTint="@null"
             android:background="@drawable/bg_btn"
             android:layout_marginTop="30dp"/>
@@ -64,6 +64,7 @@
             android:layout_marginTop="4dp">
 
             <TextView
+                android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Criar Conta"
@@ -72,6 +73,7 @@
                 android:textColor="@color/white"/>
 
             <TextView
+                android:id="@+id/btnRecover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Recuperar Conta"
@@ -86,8 +88,8 @@
             android:layout_marginTop="8dp"
             android:layout_gravity="center"
             android:indeterminateTint="@color/white"
-            android:visibility="invisible"
             tools:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
 
